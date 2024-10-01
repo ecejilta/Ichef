@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'chef Pizza</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #show-more-btn {
+    padding: 10px 20px;
+    background-color: #ff7800;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto 5rem auto;
+    display: block;
+}
+
+#show-more-btn:hover {
+    background-color: #e67e22;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-pizza-slice"></i> I'chef Pizza</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            
+            <div id="menu" class="fas fa-bars"></div>
+        </div>       
+    </header>
+
+    <div class="heading">
+        <h1>our menu</h1>
+        <p><a href="home.html">home>>></a> menu</p>
+    </div>
+    <!-- pizza somun header CELECEK -->
+
+    <section class="menu">
+    <!-- pizza start -->
+        <!-- <div class="swiper menu-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <h3 id="pizza" class="title">PIZZA</h3>
+                    <div class="box-container">
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Pizza</h3>
+                                <p>Sos, kackavall, pershuto, kepurdha</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Margartia</h3>
+                                <p>Sos, kackavall</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Gestapo</h3>
+                                <p>Sos, kackavall, sallam</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Fungi</h3>
+                                <p>Sos, kackavall, kepurdha</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Suxhuk</h3>
+                                <p>Sos, kackavall, suxhuk</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Bolognese</h3>
+                                <p>Sos, kackavall, bolognese</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Vegetarian</h3>
+                                <p>Sos, kackavall, domate, spec, qepe, kepurdha</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Tuna</h3>
+                                <p>Sos, kackavall, tuna, qepe*</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Prizreni</h3>
+                                <p>Sos, kackavall, suxhuk, bolognese</p>
+                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Gorgonzola</h3>
+                                <p>Sos, kackavall, gorgonzolla, pershuto, domate, kepurdha</p>
+                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Mish Pule</h3>
+                                <p>Sos, kackavall, mish pule</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Calzone</h3>
+                                <p>Sos, kackavall, pershuto, kepurdha</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Peperoni</h3>
+                                <p>Sos, kackavall, peperoni</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Mozarella</h3>
+                                <p>Sos, kackavall, domate, mozarella, ullinje</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>4 Djathrat</h3>
+                                <p>Sos, kackavall, zdenka, gorgonzolla, mozarella</p>
+                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Rukolla</h3>
+                                <p>Sos, kackavall, pershuto, domatino, rukolla, parmezan</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Venedik</h3>
+                                <p>Sos, kackavall, mozarella, peperoni, ullinje</p>
+                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Supreme</h3>
+                                <p>Sos, kackavall, virshle, peperoni, gorgonzolla, speca, ullinje</p>
+                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Gennaro</h3>
+                                <p>Sos, kackavall, pershuto, virshle, gorgonzolla</p>
+                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Mexicana</h3>
+                                <p>Sos, kackavall, pershuto, suxhuk, spec, qepe, fafarona, sos djeges</p>
+                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Chef Pizza</h3>
+                                <p>Sos, kackavall, pershuto, virshle, spec, ullinje, mozarella</p>
+                                <div class="price"><span>4.50€ - </span><span>5.50€ - </span><span>6.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Shpise</h3>
+                                <p>Sos, kackavall, pershuto, suxhuk, spec, domate, veze, kepurdha</p>
+                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <div class="swiper-slide slide">
+
+                    <h3 class="title">SANDWICHES</h3>
+
+                    <div class="box-container">
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+                        <div class="box" data-name="sweet">
+                            <div class="info">
+                                <h3>sweet desserts</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
+                            </div>
+                            <div class="price">$47.99</div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div> -->
+
+
+        <div class="swiper menu-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <h3 id="pizza" class="title">PIZZA</h3>
+                    <div class="box-container" id="pizza-container">
+                        <!-- Pizzalar buraya gelecek -->
+                    </div>
+                    <button id="show-more-btn" onclick="showMore()">Show More</button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    <!-- pizza end -->
+
+    <!-- somun start --> 
+        <div class="swiper menu-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+
+                    <h3 id="somun" class="title">SOMUN</h3>
+
+                    <div class="box-container">
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Bolognese</h3>
+                                <p>zdenk, bolognese</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Pershuto</h3>
+                                <p>zdenk, pershuto</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Suxhuk</h3>
+                                <p>zdenk, suxhuk</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Mish Pule</h3>
+                                <p>zdenk, mish pule</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Extra</h3>
+                                <p>zdenk, kackavall, pershuto, suxhuk</p>
+                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Chef Somun</h3>
+                                <p>sos, kackavall, suxhuk, pershuto, bolognese</p>
+                                <div class="price"><span>4.50€ - </span><span>5.50€ - </span><span>6.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- somun end -->
+
+    <!-- pide start -->
+        <div id="pide" class="swiper menu-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+
+                    <h3  class="title">PIDE</h3>
+
+                    <div class="box-container">
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Bolognese</h3>
+                                <p>sos, kackavall, bolognese</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Pershuto</h3>
+                                <p>sos, kackavall, pershuto</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Suxhuk</h3>
+                                <p>sos, kackavall, suxhuk</p>
+                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Mish Pule</h3>
+                                <p>sos, kackavall, mish pule</p>
+                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Extra</h3>
+                                <p>sos, kackavall, pershuto, suxhuk, bolognese</p>
+                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Chef Somun</h3>
+                                <p>sos, kackavall, suxhuk, pershuto, spec, domate, qepe</p>
+                                <div class="price"><span>4.50€ - </span><span>5.50€ - </span><span>6.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- pide end -->
+
+    <!-- sandwich start -->
+        <div id="sandwich" class="swiper menu-slider">
+                <div class="swiper-slide slide">
+
+                    <h3 id="somun" class="title">SANDWICH</h3>
+
+                    <div class="box-container">
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Sandwich Pershuto</h3>
+                                <div class="price"><span>3.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Sandwich Pule</h3>
+                                <div class="price"><span>3.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Sandwich Tuna</h3>
+                                <div class="price"><span>3.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Sandwich extra</h3>
+                                <div class="price"><span>4.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!-- sandwich end -->
+
+    <!-- drinks start -->
+        <div id="drinks" class="swiper menu-slider">
+                <div class="swiper-slide slide">
+
+                    <h3 id="somun" class="title">PIJET</h3>
+
+                    <div class="box-container">
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Coca Cola</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/drink-images/Cola-Cola.webp" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Coca Cola Zero</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>fanta</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>schweppes</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>sprite</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>uje</h3>
+                                <div class="price"><span>1.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>uje mineral</h3>
+                                <div class="price"><span>1.00€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box" data-name="pizza">
+                            <div class="info">
+                                <h3>Lengjet</h3>
+                                <div class="price"><span>1.50€</span></div>
+                            </div>
+                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!-- drinks end -->
+    </section>
+
+
+   
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>find us here</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ad</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>+123-456-7890</p>
+        </div>
+
+        <div class="box">
+            <h3>localization</h3>
+            <p>230 point of pines dr <br>
+                colorado springs
+                united states</p>
+        </div>
+
+    </div>
+    <div class="credit">created by <span>ecezeynep123</span> | all rights reserved!</div>
+
+</section>
+
+ <!-- swiper cdn link -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <!-- custom js link -->
+ <script src="script.js"></script>
+
+ <script>
+    const pizzas = [
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Pizza',
+        description: 'Sos, kackavall, pershuto, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Margartia',
+        description: 'Sos, kackavall',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gestapo',
+        description: 'Sos, kackavall, sallam',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+];
+
+const container = document.getElementById('pizza-container');
+let pizzasShown = 6; // İlk başta gösterilecek pizza sayısı
+
+function loadPizzas() {
+    // İlk 6 pizzayı gösterelim
+    container.innerHTML = '';
+    for (let i = 0; i < pizzasShown && i < pizzas.length; i++) {
+        const pizza = pizzas[i];
+        const pizzaBox = `
+            <div class="box" data-name="pizza">
+                <div class="info">
+                    <h3>${pizza.name}</h3>
+                    <p>${pizza.description}</p>
+                    <div class="price">
+                        <span>${pizza.prices[0]} - </span>
+                        <span>${pizza.prices[1]} - </span>
+                        <span>${pizza.prices[2]}</span>
+                    </div>
+                </div>
+                <img src="${pizza.image}" width="100px" height="100px" alt="${pizza.name}">
+            </div>
+        `;
+        container.innerHTML += pizzaBox;
+    }
+
+    // Eğer daha fazla pizza yoksa, "Show More" butonunu gizle
+    if (pizzasShown >= pizzas.length) {
+        document.getElementById('show-more-btn').style.display = 'none';
+    }
+}
+
+function showMore() {
+    pizzasShown += 6; // 6 pizza daha göster
+    loadPizzas(); // Tekrar pizzaları yükle
+}
+
+// Sayfa ilk yüklendiğinde pizzaları yükle
+window.onload = loadPizzas;
+
+ </script>
+</body>
+</html>
