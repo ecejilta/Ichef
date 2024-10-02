@@ -11,36 +11,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        #show-more-btn {
-    padding: 10px 20px;
-    background-color: #ff7800;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0 auto 5rem auto;
-    display: block;
-}
-
-#show-more-btn:hover {
-    background-color: #e67e22;
-}
-
-    </style>
 </head>
 <body>
     <header class="header">
 
-        <a href="home.html" class="logo"> <i class="fas fa-pizza-slice"></i> I'chef Pizza</a>
-
+        <div class="logo-title">
+            <img src="images/ichef-logo.jpeg" class="ichef-logo" alt="">
+            <a href="home.html" class="logo">Pizza</a>
+        </div>
+        
         <nav class="navbar">
             <a href="home.html">home</a>
+            <a href="menu.html" class="active">menu </a>
             <a href="about.html">about</a>
-            <a href="menu.html">menu</a>
-            <a href="gallery.html">gallery</a>
             <a href="contact.html">contact</a>
         </nav>
 
@@ -52,286 +35,11 @@
 
     <div class="heading">
         <h1>our menu</h1>
-        <p><a href="home.html">home>>></a> menu</p>
     </div>
     <!-- pizza somun header CELECEK -->
 
-    <section class="menu">
     <!-- pizza start -->
-        <!-- <div class="swiper menu-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide">
-                    <h3 id="pizza" class="title">PIZZA</h3>
-                    <div class="box-container">
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Pizza</h3>
-                                <p>Sos, kackavall, pershuto, kepurdha</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Margartia</h3>
-                                <p>Sos, kackavall</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Gestapo</h3>
-                                <p>Sos, kackavall, sallam</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Fungi</h3>
-                                <p>Sos, kackavall, kepurdha</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Suxhuk</h3>
-                                <p>Sos, kackavall, suxhuk</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Bolognese</h3>
-                                <p>Sos, kackavall, bolognese</p>
-                                <div class="price"><span>3.00€ - </span><span>3.50€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Vegetarian</h3>
-                                <p>Sos, kackavall, domate, spec, qepe, kepurdha</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Tuna</h3>
-                                <p>Sos, kackavall, tuna, qepe*</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Prizreni</h3>
-                                <p>Sos, kackavall, suxhuk, bolognese</p>
-                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Gorgonzola</h3>
-                                <p>Sos, kackavall, gorgonzolla, pershuto, domate, kepurdha</p>
-                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Mish Pule</h3>
-                                <p>Sos, kackavall, mish pule</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Calzone</h3>
-                                <p>Sos, kackavall, pershuto, kepurdha</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Peperoni</h3>
-                                <p>Sos, kackavall, peperoni</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Mozarella</h3>
-                                <p>Sos, kackavall, domate, mozarella, ullinje</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>4 Djathrat</h3>
-                                <p>Sos, kackavall, zdenka, gorgonzolla, mozarella</p>
-                                <div class="price"><span>3.50€ - </span><span>4.50€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Rukolla</h3>
-                                <p>Sos, kackavall, pershuto, domatino, rukolla, parmezan</p>
-                                <div class="price"><span>3.50€ - </span><span>4.00€ - </span><span>5.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Venedik</h3>
-                                <p>Sos, kackavall, mozarella, peperoni, ullinje</p>
-                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Supreme</h3>
-                                <p>Sos, kackavall, virshle, peperoni, gorgonzolla, speca, ullinje</p>
-                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Gennaro</h3>
-                                <p>Sos, kackavall, pershuto, virshle, gorgonzolla</p>
-                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Mexicana</h3>
-                                <p>Sos, kackavall, pershuto, suxhuk, spec, qepe, fafarona, sos djeges</p>
-                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Chef Pizza</h3>
-                                <p>Sos, kackavall, pershuto, virshle, spec, ullinje, mozarella</p>
-                                <div class="price"><span>4.50€ - </span><span>5.50€ - </span><span>6.50€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Shpise</h3>
-                                <p>Sos, kackavall, pershuto, suxhuk, spec, domate, veze, kepurdha</p>
-                                <div class="price"><span>4.00€ - </span><span>5.00€ - </span><span>6.00€</span></div>
-                            </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-                
-                <div class="swiper-slide slide">
-
-                    <h3 class="title">SANDWICHES</h3>
-
-                    <div class="box-container">
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-                        <div class="box" data-name="sweet">
-                            <div class="info">
-                                <h3>sweet desserts</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam</p>
-                            </div>
-                            <div class="price">$47.99</div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-        </div> -->
-
-
+    <section class="menu">
         <div class="swiper menu-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide">
@@ -608,41 +316,30 @@
     </section>
 
 
-   
-
-
-
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>find us here</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ad</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-whatsapp"></a>
+    <!-- footer start -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>find us here</h3>
+                <div class="share">
+                    <a href="https://www.facebook.com/share/5bGx855hVDD5jHhS/?mibextid=qi2Omg" class="fab fa-facebook-f" target="_blank"></a>
+                    <a href="https://www.instagram.com/ichefpizza/?hl=en" class="fab fa-instagram" target="_blank"></a>
+                    <a href="+38344213444" class="fab fa-viber"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact us</h3>
+                <p><a href="tel:+383044312444" class="number">+383 044 - 312 - 444</a></p>
+            </div>
+            <div class="box">
+                <h3>localization</h3>
+                <p>Shuaip spahiu / Shadervan <br>
+                    Prizren </p>
             </div>
         </div>
-
-        <div class="box">
-            <h3>contact us</h3>
-            <p>+123-456-7890</p>
-        </div>
-
-        <div class="box">
-            <h3>localization</h3>
-            <p>230 point of pines dr <br>
-                colorado springs
-                united states</p>
-        </div>
-
-    </div>
-    <div class="credit">created by <span>ecezeynep123</span> | all rights reserved!</div>
-
-</section>
+        <div class="credit">created by <span>ecezeynep123</span> | all rights reserved!</div>
+    </section>
+    <!-- footer end -->
 
  <!-- swiper cdn link -->
  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -658,7 +355,7 @@
         image: 'images/about.jpg'
     },
     {
-        name: 'Margartia',
+        name: 'Margarita',
         description: 'Sos, kackavall',
         prices: ['3.00€', '3.50€', '5.00€'],
         image: 'images/about.jpg'
@@ -670,185 +367,120 @@
         image: 'images/about.jpg'
     },
     {
-        name: 'Pizza',
+        name: 'Fungi',
+        description: 'Sos, kackavall, kepurdha',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Suxhuk',
+        description: 'Sos, kackavall, suxhuk',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Bolognese',
+        description: 'Sos, kackavall, bolognese',
+        prices: ['3.00€', '3.50€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Vegetarian',
+        description: 'Sos, kackavall, domate, spec, qepe, kepurdha',
+        prices: ['3.50€', '4.00€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Tuna',
+        description: 'Sos, kackavall, tuna, qepe*',
+        prices: ['3.50€', '4.00€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Prizreni',
+        description: 'Sos, kackavall, suxhuk, bolognese',
+        prices: ['3.50€', '4.50€', '6.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Gorgonzola',
+        description: 'Sos, kackavall, gorgonzola, pershuto, domate, kepurdha',
+        prices: ['3.50€', '4.50€', '6.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Mish Pule',
+        description: 'Sos, kackavall, mish pule',
+        prices: ['3.50€', '4.00€', '5.00€'],
+        image: 'images/about.jpg'
+    },
+    {
+        name: 'Calzone',
         description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        prices: ['3.50€', '4.00€', '5.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Peperoni',
+        description: 'Sos, kackavall, peperoni',
+        prices: ['3.50€', '4.00€', '5.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Mozarella',
+        description: 'Sos, kackavall, domate, mozarella, ullinje',
+        prices: ['3.50€', '4.00€', '5.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: '4 Djathrat',
+        description: 'Sos, kackavall, zdenka, gorgonzolla, mozarella',
+        prices: ['3.50€', '4.50€', '6.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Rukolla',
+        description: 'Sos, kackavall, pershuto, domatino, rukolla, parmezan',
+        prices: ['3.50€', '4.00€', '5.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Venedik',
+        description: 'Sos, kackavall, mozarella, peperoni, ullinje',
+        prices: ['4.00€', '5.00€', '6.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Supreme',
+        description: 'Sos, kackavall, virshle, peperoni, gorgonzolla, speca, ullinje',
+        prices: ['4.00€', '5.00€', '6.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Gennaro',
+        description: 'Sos, kackavall, pershuto, virshle, gorgonzola',
+        prices: ['4.00€', '5.00€', '6.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Maxicana',
+        description: 'Sos, kackavall, pershuto, suxhuk, spec, qepe, fafarona, sos djeges',
+        prices: ['4.00€', '5.00€', '6.00€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Chef Pizza',
+        description: 'Sos, kackavall, pershuto, virshle, spec, ullinje, mozarella',
+        prices: ['4.50€', '5.50€', '6.50€'],
         image: 'images/about.jpg'
     },
     {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
+        name: 'Shpise',
+        description: 'Sos, kackavall, pershuto, suxhuk, spec, domate, veze, kepurdha',
+        prices: ['4.00€', '5.00€', '6.00€'],
         image: 'images/about.jpg'
     },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Pizza',
-        description: 'Sos, kackavall, pershuto, kepurdha',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Margartia',
-        description: 'Sos, kackavall',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
-    {
-        name: 'Gestapo',
-        description: 'Sos, kackavall, sallam',
-        prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
-    },
+    
 ];
 
 const container = document.getElementById('pizza-container');

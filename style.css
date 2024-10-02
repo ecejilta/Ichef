@@ -43,7 +43,6 @@ section{
   background-position: center;
   text-align: center;
   padding-top: 12rem;
-  padding-bottom: 8rem;
 }
 
 .navbar{
@@ -121,6 +120,11 @@ section{
 .header .navbar a:hover{
   color: #ff7800;
 }
+
+  .navbar a.active{
+    color:#ff7800
+
+  }
 
 .header .icons div{
   font-size: 2.5rem;
@@ -867,3 +871,28 @@ section{
  .logo-title {
   display: flex;
  }
+
+ #show-more-btn {
+  padding: 10px 20px;
+  background-color: #ff7800;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto 5rem auto;
+  display: block;
+}
+
+#show-more-btn:hover {
+  background-color: #e67e22;
+}
+
+.number {
+  color: #666;
+  text-decoration: underline;
+}
+
+.vegetarian{
+  padding: 15rem;
+}
